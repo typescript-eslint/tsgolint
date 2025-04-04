@@ -263,6 +263,7 @@ func runMain() int {
 		fmt.Fprintf(os.Stderr, "error getting current directory: %v\n", err)
 		return 1
 	}
+	currentDirectory = tspath.NormalizePath(currentDirectory)
 
 	fs := bundled.WrapFS(osvfs.FS())
 	var configFileName string
@@ -280,6 +281,8 @@ func runMain() int {
 			return 1
 		}
 	}
+
+	currentDirectory = tspath.GetDirectoryPath(configFileName)
 
 	var rules = []rule.Rule{
 		await_thenable.AwaitThenableRule,
