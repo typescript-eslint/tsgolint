@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 1,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      1
+    ],
+    "value": "("
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 4,
+        "line": 1
+      },
+      "start": {
+        "column": 1,
+        "line": 1
+      }
+    },
+    "range": [
+      1,
+      4
+    ],
+    "value": "foo"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 8,
+        "line": 1
+      },
+      "start": {
+        "column": 5,
+        "line": 1
+      }
+    },
+    "range": [
+      5,
+      8
+    ],
+    "value": "==="
+  },
+  {
+    "type": "Numeric",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 1
+      },
+      "start": {
+        "column": 9,
+        "line": 1
+      }
+    },
+    "range": [
+      9,
+      10
+    ],
+    "value": "1"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 1
+      },
+      "start": {
+        "column": 10,
+        "line": 1
+      }
+    },
+    "range": [
+      10,
+      11
+    ],
+    "value": ")"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 21,
+        "line": 1
+      },
+      "start": {
+        "column": 12,
+        "line": 1
+      }
+    },
+    "range": [
+      12,
+      21
+    ],
+    "value": "satisfies"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 29,
+        "line": 1
+      },
+      "start": {
+        "column": 22,
+        "line": 1
+      }
+    },
+    "range": [
+      22,
+      29
+    ],
+    "value": "boolean"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 30,
+        "line": 1
+      },
+      "start": {
+        "column": 29,
+        "line": 1
+      }
+    },
+    "range": [
+      29,
+      30
+    ],
+    "value": ";"
+  }
+]

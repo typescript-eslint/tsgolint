@@ -1,0 +1,92 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 6,
+        "line": 4
+      },
+      "start": {
+        "column": 0,
+        "line": 4
+      }
+    },
+    "range": [
+      128,
+      134
+    ],
+    "value": "import"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 4
+      },
+      "start": {
+        "column": 7,
+        "line": 4
+      }
+    },
+    "range": [
+      135,
+      139
+    ],
+    "value": "type"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 16,
+        "line": 4
+      },
+      "start": {
+        "column": 12,
+        "line": 4
+      }
+    },
+    "range": [
+      140,
+      144
+    ],
+    "value": "from"
+  },
+  {
+    "type": "String",
+    "loc": {
+      "end": {
+        "column": 24,
+        "line": 4
+      },
+      "start": {
+        "column": 17,
+        "line": 4
+      }
+    },
+    "range": [
+      145,
+      152
+    ],
+    "value": "'./foo'"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 25,
+        "line": 4
+      },
+      "start": {
+        "column": 24,
+        "line": 4
+      }
+    },
+    "range": [
+      152,
+      153
+    ],
+    "value": ";"
+  }
+]

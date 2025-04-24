@@ -1,0 +1,182 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 6,
+        "line": 3
+      },
+      "start": {
+        "column": 0,
+        "line": 3
+      }
+    },
+    "range": [
+      73,
+      79
+    ],
+    "value": "export"
+  },
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 13,
+        "line": 3
+      },
+      "start": {
+        "column": 7,
+        "line": 3
+      }
+    },
+    "range": [
+      80,
+      86
+    ],
+    "value": "import"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 18,
+        "line": 3
+      },
+      "start": {
+        "column": 14,
+        "line": 3
+      }
+    },
+    "range": [
+      87,
+      91
+    ],
+    "value": "type"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 3
+      },
+      "start": {
+        "column": 19,
+        "line": 3
+      }
+    },
+    "range": [
+      92,
+      95
+    ],
+    "value": "foo"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 24,
+        "line": 3
+      },
+      "start": {
+        "column": 23,
+        "line": 3
+      }
+    },
+    "range": [
+      96,
+      97
+    ],
+    "value": "="
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 32,
+        "line": 3
+      },
+      "start": {
+        "column": 25,
+        "line": 3
+      }
+    },
+    "range": [
+      98,
+      105
+    ],
+    "value": "require"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 33,
+        "line": 3
+      },
+      "start": {
+        "column": 32,
+        "line": 3
+      }
+    },
+    "range": [
+      105,
+      106
+    ],
+    "value": "("
+  },
+  {
+    "type": "String",
+    "loc": {
+      "end": {
+        "column": 38,
+        "line": 3
+      },
+      "start": {
+        "column": 33,
+        "line": 3
+      }
+    },
+    "range": [
+      106,
+      111
+    ],
+    "value": "'bar'"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 39,
+        "line": 3
+      },
+      "start": {
+        "column": 38,
+        "line": 3
+      }
+    },
+    "range": [
+      111,
+      112
+    ],
+    "value": ")"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 40,
+        "line": 3
+      },
+      "start": {
+        "column": 39,
+        "line": 3
+      }
+    },
+    "range": [
+      112,
+      113
+    ],
+    "value": ";"
+  }
+]

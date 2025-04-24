@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Numeric",
+    "loc": {
+      "end": {
+        "column": 2,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      2
+    ],
+    "value": "0n"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 3,
+        "line": 1
+      },
+      "start": {
+        "column": 2,
+        "line": 1
+      }
+    },
+    "range": [
+      2,
+      3
+    ],
+    "value": ";"
+  }
+]

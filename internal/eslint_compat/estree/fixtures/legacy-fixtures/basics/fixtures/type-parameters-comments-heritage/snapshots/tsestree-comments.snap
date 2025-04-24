@@ -1,0 +1,344 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 71,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      71
+    ],
+    "value": " TODO: This fixture might be too large, and if so should be split up."
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 19,
+        "line": 3
+      },
+      "start": {
+        "column": 10,
+        "line": 3
+      }
+    },
+    "range": [
+      83,
+      92
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 31,
+        "line": 3
+      },
+      "start": {
+        "column": 22,
+        "line": 3
+      }
+    },
+    "range": [
+      95,
+      104
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 54,
+        "line": 3
+      },
+      "start": {
+        "column": 45,
+        "line": 3
+      }
+    },
+    "range": [
+      118,
+      127
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 66,
+        "line": 3
+      },
+      "start": {
+        "column": 57,
+        "line": 3
+      }
+    },
+    "range": [
+      130,
+      139
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 5
+      },
+      "start": {
+        "column": 2,
+        "line": 5
+      }
+    },
+    "range": [
+      158,
+      167
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 23,
+        "line": 5
+      },
+      "start": {
+        "column": 14,
+        "line": 5
+      }
+    },
+    "range": [
+      170,
+      179
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 37,
+        "line": 5
+      },
+      "start": {
+        "column": 28,
+        "line": 5
+      }
+    },
+    "range": [
+      184,
+      193
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 23,
+        "line": 6
+      },
+      "start": {
+        "column": 14,
+        "line": 6
+      }
+    },
+    "range": [
+      209,
+      218
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 35,
+        "line": 6
+      },
+      "start": {
+        "column": 26,
+        "line": 6
+      }
+    },
+    "range": [
+      221,
+      230
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 23,
+        "line": 7
+      },
+      "start": {
+        "column": 14,
+        "line": 7
+      }
+    },
+    "range": [
+      249,
+      258
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 35,
+        "line": 7
+      },
+      "start": {
+        "column": 26,
+        "line": 7
+      }
+    },
+    "range": [
+      261,
+      270
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 59,
+        "line": 7
+      },
+      "start": {
+        "column": 50,
+        "line": 7
+      }
+    },
+    "range": [
+      285,
+      294
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 71,
+        "line": 7
+      },
+      "start": {
+        "column": 62,
+        "line": 7
+      }
+    },
+    "range": [
+      297,
+      306
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 24,
+        "line": 8
+      },
+      "start": {
+        "column": 15,
+        "line": 8
+      }
+    },
+    "range": [
+      326,
+      335
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 36,
+        "line": 8
+      },
+      "start": {
+        "column": 27,
+        "line": 8
+      }
+    },
+    "range": [
+      338,
+      347
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 50,
+        "line": 8
+      },
+      "start": {
+        "column": 41,
+        "line": 8
+      }
+    },
+    "range": [
+      352,
+      361
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 23,
+        "line": 9
+      },
+      "start": {
+        "column": 14,
+        "line": 9
+      }
+    },
+    "range": [
+      377,
+      386
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 35,
+        "line": 9
+      },
+      "start": {
+        "column": 26,
+        "line": 9
+      }
+    },
+    "range": [
+      389,
+      398
+    ],
+    "value": " bbb "
+  }
+]

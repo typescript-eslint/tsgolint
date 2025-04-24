@@ -1,0 +1,78 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    31
+  ],
+  "body": [
+    {
+      "type": "ExportAllDeclaration",
+      "attributes": [],
+      "exported": {
+        "type": "Identifier",
+        "decorators": [],
+        "name": "mod",
+        "optional": false,
+        "range": [
+          12,
+          15
+        ],
+        "loc": {
+          "end": {
+            "column": 15,
+            "line": 1
+          },
+          "start": {
+            "column": 12,
+            "line": 1
+          }
+        }
+      },
+      "exportKind": "value",
+      "source": {
+        "type": "Literal",
+        "raw": "'module'",
+        "value": "module",
+        "range": [
+          21,
+          29
+        ],
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 1
+          },
+          "start": {
+            "column": 21,
+            "line": 1
+          }
+        }
+      },
+      "range": [
+        0,
+        30
+      ],
+      "loc": {
+        "end": {
+          "column": 30,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

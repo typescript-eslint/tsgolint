@@ -1,0 +1,92 @@
+[
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 4,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      4
+    ],
+    "value": "type"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 6,
+        "line": 1
+      },
+      "start": {
+        "column": 5,
+        "line": 1
+      }
+    },
+    "range": [
+      5,
+      6
+    ],
+    "value": "T"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 8,
+        "line": 1
+      },
+      "start": {
+        "column": 7,
+        "line": 1
+      }
+    },
+    "range": [
+      7,
+      8
+    ],
+    "value": "="
+  },
+  {
+    "type": "Numeric",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 1
+      },
+      "start": {
+        "column": 9,
+        "line": 1
+      }
+    },
+    "range": [
+      9,
+      10
+    ],
+    "value": "1"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 1
+      },
+      "start": {
+        "column": 10,
+        "line": 1
+      }
+    },
+    "range": [
+      10,
+      11
+    ],
+    "value": ";"
+  }
+]

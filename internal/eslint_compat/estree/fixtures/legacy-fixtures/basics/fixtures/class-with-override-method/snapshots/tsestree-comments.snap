@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 71,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      71
+    ],
+    "value": " TODO: This fixture might be too large, and if so should be split up."
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 5
+      },
+      "start": {
+        "column": 4,
+        "line": 5
+      }
+    },
+    "range": [
+      148,
+      154
+    ],
+    "value": " ..."
+  }
+]

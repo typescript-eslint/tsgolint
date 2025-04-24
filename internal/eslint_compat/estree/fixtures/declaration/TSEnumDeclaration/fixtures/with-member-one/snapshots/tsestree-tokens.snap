@@ -1,0 +1,110 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 4,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      4
+    ],
+    "value": "enum"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 8,
+        "line": 1
+      },
+      "start": {
+        "column": 5,
+        "line": 1
+      }
+    },
+    "range": [
+      5,
+      8
+    ],
+    "value": "Foo"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 1
+      },
+      "start": {
+        "column": 9,
+        "line": 1
+      }
+    },
+    "range": [
+      9,
+      10
+    ],
+    "value": "{"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 3,
+        "line": 2
+      },
+      "start": {
+        "column": 2,
+        "line": 2
+      }
+    },
+    "range": [
+      13,
+      14
+    ],
+    "value": "A"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 4,
+        "line": 2
+      },
+      "start": {
+        "column": 3,
+        "line": 2
+      }
+    },
+    "range": [
+      14,
+      15
+    ],
+    "value": ","
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 1,
+        "line": 3
+      },
+      "start": {
+        "column": 0,
+        "line": 3
+      }
+    },
+    "range": [
+      16,
+      17
+    ],
+    "value": "}"
+  }
+]

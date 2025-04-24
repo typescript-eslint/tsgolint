@@ -19,12 +19,14 @@ func GetCommentsInRange(sourceFile *ast.SourceFile, inRange core.TextRange) iter
 	nodeFactory := ast.NewNodeFactory(ast.NodeFactoryHooks{})
 
 	return func(yield func(ast.CommentRange) bool) {
-		for commentRange := range scanner.GetTrailingCommentRanges(nodeFactory, sourceFile.Text, inRange.Pos()) {
-			if commentRange.Pos() >= inRange.End() {
-				break
-			}
-			if !yield(commentRange) {
-				return
+		if inRange.Pos() != 0 {
+			for commentRange := range scanner.GetTrailingCommentRanges(nodeFactory, sourceFile.Text, inRange.Pos()) {
+				if commentRange.Pos() >= inRange.End() {
+					break
+				}
+				if !yield(commentRange) {
+					return
+				}
 			}
 		}
 

@@ -185,13 +185,13 @@ func RunRuleTester(rootDir string, tsconfigPath string, t *testing.T, r *rule.Ru
 
 				suggestionsCount := 0
 				if diagnostic.Suggestions != nil {
-					suggestionsCount = len(*diagnostic.Suggestions)
+					suggestionsCount = len(diagnostic.Suggestions)
 				}
 				if len(expected.Suggestions) != suggestionsCount {
 					t.Errorf("Expected to have %v suggestions but had %v", len(expected.Suggestions), suggestionsCount)
 				} else {
 					for i, expectedSuggestion := range expected.Suggestions {
-						suggestion := (*diagnostic.Suggestions)[i]
+						suggestion := diagnostic.Suggestions[i]
 						if expectedSuggestion.MessageId != suggestion.Message.Id {
 							t.Errorf("Invalid suggestion message id %v. Expected %v", suggestion.Message.Id, expectedSuggestion.MessageId)
 						} else {

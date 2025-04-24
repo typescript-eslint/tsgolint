@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 1,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      1
+    ],
+    "value": "<"
+  },
+  {
+    "type": "JSXIdentifier",
+    "loc": {
+      "end": {
+        "column": 2,
+        "line": 1
+      },
+      "start": {
+        "column": 1,
+        "line": 1
+      }
+    },
+    "range": [
+      1,
+      2
+    ],
+    "value": "a"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 3,
+        "line": 1
+      },
+      "start": {
+        "column": 2,
+        "line": 1
+      }
+    },
+    "range": [
+      2,
+      3
+    ],
+    "value": ">"
+  },
+  {
+    "type": "JSXText",
+    "loc": {
+      "end": {
+        "column": 0,
+        "line": 3
+      },
+      "start": {
+        "column": 3,
+        "line": 1
+      }
+    },
+    "range": [
+      3,
+      15
+    ],
+    "value": "\n// comment\n"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 1,
+        "line": 3
+      },
+      "start": {
+        "column": 0,
+        "line": 3
+      }
+    },
+    "range": [
+      15,
+      16
+    ],
+    "value": "<"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 2,
+        "line": 3
+      },
+      "start": {
+        "column": 1,
+        "line": 3
+      }
+    },
+    "range": [
+      16,
+      17
+    ],
+    "value": "/"
+  },
+  {
+    "type": "JSXIdentifier",
+    "loc": {
+      "end": {
+        "column": 3,
+        "line": 3
+      },
+      "start": {
+        "column": 2,
+        "line": 3
+      }
+    },
+    "range": [
+      17,
+      18
+    ],
+    "value": "a"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 4,
+        "line": 3
+      },
+      "start": {
+        "column": 3,
+        "line": 3
+      }
+    },
+    "range": [
+      18,
+      19
+    ],
+    "value": ">"
+  }
+]

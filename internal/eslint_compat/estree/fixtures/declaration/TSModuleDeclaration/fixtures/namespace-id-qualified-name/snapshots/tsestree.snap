@@ -1,0 +1,152 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    19
+  ],
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [],
+        "range": [
+          16,
+          18
+        ],
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 1
+          },
+          "start": {
+            "column": 16,
+            "line": 1
+          }
+        }
+      },
+      "declare": false,
+      "global": false,
+      "id": {
+        "type": "TSQualifiedName",
+        "range": [
+          10,
+          15
+        ],
+        "left": {
+          "type": "TSQualifiedName",
+          "range": [
+            10,
+            13
+          ],
+          "left": {
+            "type": "Identifier",
+            "range": [
+              10,
+              11
+            ],
+            "decorators": [],
+            "name": "A",
+            "optional": false,
+            "loc": {
+              "end": {
+                "column": 11,
+                "line": 1
+              },
+              "start": {
+                "column": 10,
+                "line": 1
+              }
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "range": [
+              12,
+              13
+            ],
+            "decorators": [],
+            "name": "B",
+            "optional": false,
+            "loc": {
+              "end": {
+                "column": 13,
+                "line": 1
+              },
+              "start": {
+                "column": 12,
+                "line": 1
+              }
+            }
+          },
+          "loc": {
+            "end": {
+              "column": 13,
+              "line": 1
+            },
+            "start": {
+              "column": 10,
+              "line": 1
+            }
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "range": [
+            14,
+            15
+          ],
+          "decorators": [],
+          "name": "C",
+          "optional": false,
+          "loc": {
+            "end": {
+              "column": 15,
+              "line": 1
+            },
+            "start": {
+              "column": 14,
+              "line": 1
+            }
+          }
+        },
+        "loc": {
+          "end": {
+            "column": 15,
+            "line": 1
+          },
+          "start": {
+            "column": 10,
+            "line": 1
+          }
+        }
+      },
+      "kind": "namespace",
+      "range": [
+        0,
+        18
+      ],
+      "loc": {
+        "end": {
+          "column": 18,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

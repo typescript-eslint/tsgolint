@@ -1,0 +1,128 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      10
+    ],
+    "value": "/ pragma"
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 19,
+        "line": 2
+      },
+      "start": {
+        "column": 3,
+        "line": 2
+      }
+    },
+    "range": [
+      14,
+      30
+    ],
+    "value": "after callee"
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 38,
+        "line": 2
+      },
+      "start": {
+        "column": 20,
+        "line": 2
+      }
+    },
+    "range": [
+      31,
+      49
+    ],
+    "value": " callee trailing"
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 3
+      },
+      "start": {
+        "column": 8,
+        "line": 3
+      }
+    },
+    "range": [
+      58,
+      72
+    ],
+    "value": " arg leading"
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 21,
+        "line": 4
+      },
+      "start": {
+        "column": 6,
+        "line": 4
+      }
+    },
+    "range": [
+      79,
+      94
+    ],
+    "value": " after arg "
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 38,
+        "line": 4
+      },
+      "start": {
+        "column": 23,
+        "line": 4
+      }
+    },
+    "range": [
+      96,
+      111
+    ],
+    "value": " arg trailing"
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 25,
+        "line": 6
+      },
+      "start": {
+        "column": 19,
+        "line": 6
+      }
+    },
+    "range": [
+      152,
+      158
+    ],
+    "value": " eof"
+  }
+]

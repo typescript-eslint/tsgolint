@@ -91,7 +91,7 @@ type RuleDiagnostic struct {
 	// nil if no fixes were provided
 	FixesPtr *[]RuleFix
 	// nil if no suggestions were provided
-	Suggestions *[]RuleSuggestion
+	Suggestions []RuleSuggestion
 	SourceFile  *ast.SourceFile
 }
 

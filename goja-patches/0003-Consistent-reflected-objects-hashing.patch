@@ -1,0 +1,307 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: auvred <aauvred@gmail.com>
+Date: Mon, 21 Apr 2025 11:37:21 +0300
+Subject: [PATCH] Consistent reflected objects hashing
+
+
+diff --git a/destruct.go b/destruct.go
+index 66792dc..8fe2289 100644
+--- a/destruct.go
++++ b/destruct.go
+@@ -248,6 +248,9 @@ func (d *destructKeyedSource) exportToArrayOrSlice(dst reflect.Value, typ reflec
+ func (d *destructKeyedSource) equal(impl objectImpl) bool {
+ 	return d.w().equal(impl)
+ }
++func (d *destructKeyedSource) hash() uint64 {
++	return d.w().hash()
++}
+ 
+ func (d *destructKeyedSource) stringKeys(all bool, accum []Value) []Value {
+ 	var next iterNextFunc
+diff --git a/map_test.go b/map_test.go
+index 8a743e4..dc99762 100644
+--- a/map_test.go
++++ b/map_test.go
+@@ -199,3 +199,119 @@ func TestOrderedMapIterDeleteCurrent(t *testing.T) {
+ 		t.Fatalf("2: unexpected key: %v", entry.key)
+ 	}
+ }
++
++func TestPointerPropertyEquality(t *testing.T) {
++	type value struct{}
++	type document struct {
++		ValuePtr *value
++	}
++
++	d := document{
++		ValuePtr: &value{},
++	}
++	runtime := New()
++	runtime.Set("d", &d)
++
++	res, err := runtime.RunString(`
++		a = d.ValuePtr
++		b = d.ValuePtr
++
++		const m = new Map()
++		m.set(a, 1)
++		m.get(b) === 1
++	`)
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	if !res.ToBoolean() {
++		t.Fatal("objects differ")
++	}
++}
++
++func TestInterfacePropertyEquality(t *testing.T) {
++	type value struct{}
++	type document struct {
++		ValuePtr any
++	}
++
++	d := document{
++		ValuePtr: &value{},
++	}
++	runtime := New()
++	runtime.Set("d", &d)
++
++	res, err := runtime.RunString(`
++		a = d.ValuePtr
++		b = d.ValuePtr
++
++		const m = new Map()
++		m.set(a, 1)
++		m.get(b) === 1
++	`)
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	if !res.ToBoolean() {
++		t.Fatal("objects differ")
++	}
++}
++
++func TestPointerSliceElementEquality(t *testing.T) {
++	type value struct{}
++	type document struct {
++		ValuePtr []*value
++	}
++
++	d := document{
++		ValuePtr: []*value{&value{}},
++	}
++	runtime := New()
++	runtime.Set("d", &d)
++
++	res, err := runtime.RunString(`
++		a = d.ValuePtr[0]
++		b = d.ValuePtr[0]
++
++		const m = new Map()
++		m.set(a, 1)
++		m.get(b) === 1
++	`)
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	if !res.ToBoolean() {
++		t.Fatal("objects differ")
++	}
++}
++
++func TestInterfaceSliceElementEquality(t *testing.T) {
++	type value struct{}
++	type document struct {
++		ValuePtr []any
++	}
++
++	d := document{
++		ValuePtr: []any{&value{}},
++	}
++	runtime := New()
++	runtime.Set("d", &d)
++
++	res, err := runtime.RunString(`
++		a = d.ValuePtr[0]
++		b = d.ValuePtr[0]
++
++		const m = new Map()
++		m.set(a, 1)
++		m.get(b) === 1
++	`)
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	if !res.ToBoolean() {
++		t.Fatal("objects differ")
++	}
++}
+diff --git a/object.go b/object.go
+index 79bd67d..2a4519b 100644
+--- a/object.go
++++ b/object.go
+@@ -210,6 +210,8 @@ type objectImpl interface {
+ 	_putProp(name unistring.String, value Value, writable, enumerable, configurable bool) Value
+ 	_putSym(s *Symbol, prop Value)
+ 	getPrivateEnv(typ *privateEnvType, create bool) *privateElements
++
++	hash() uint64
+ }
+ 
+ type baseObject struct {
+@@ -1308,6 +1310,10 @@ func (o *baseObject) equal(objectImpl) bool {
+ 	// Rely on parent reference comparison
+ 	return false
+ }
++func (o *baseObject) hash() uint64 {
++	// Rely on parent hash
++	return 0
++}
+ 
+ // hopefully this gets inlined
+ func (o *baseObject) ensurePropOrder() {
+@@ -1639,7 +1645,7 @@ func (o *Object) getWeakRefs() map[weakMap]Value {
+ func (o *Object) getId() uint64 {
+ 	id := o.id
+ 	if id == 0 {
+-		id = o.runtime.genId()
++		id = o.self.hash()
+ 		o.id = id
+ 	}
+ 	return id
+diff --git a/object_dynamic.go b/object_dynamic.go
+index b1e3161..eb89666 100644
+--- a/object_dynamic.go
++++ b/object_dynamic.go
+@@ -4,6 +4,7 @@ import (
+ 	"fmt"
+ 	"reflect"
+ 	"strconv"
++	"unsafe"
+ 
+ 	"github.com/dop251/goja/unistring"
+ )
+@@ -522,6 +523,9 @@ func (o *dynamicObject) equal(impl objectImpl) bool {
+ 	}
+ 	return false
+ }
++func (o *dynamicObject) hash() uint64 {
++	return uint64(uintptr(unsafe.Pointer(reflect.ValueOf(o.d).Addr().UnsafePointer())))
++}
+ 
+ func (o *dynamicObject) stringKeys(all bool, accum []Value) []Value {
+ 	keys := o.d.Keys()
+@@ -768,6 +772,9 @@ func (a *dynamicArray) equal(impl objectImpl) bool {
+ 	}
+ 	return false
+ }
++func (a *dynamicArray) hash() uint64 {
++	return uint64(uintptr(unsafe.Pointer(a)))
++}
+ 
+ func (a *dynamicArray) stringKeys(all bool, accum []Value) []Value {
+ 	al := a.a.Len()
+diff --git a/object_gomap.go b/object_gomap.go
+index 82138c2..09c47b1 100644
+--- a/object_gomap.go
++++ b/object_gomap.go
+@@ -2,6 +2,7 @@ package goja
+ 
+ import (
+ 	"reflect"
++	"unsafe"
+ 
+ 	"github.com/dop251/goja/unistring"
+ )
+@@ -156,3 +157,6 @@ func (o *objectGoMapSimple) equal(other objectImpl) bool {
+ 	}
+ 	return false
+ }
++func (o *objectGoMapSimple) hash() uint64 {
++	return uint64(uintptr(unsafe.Pointer(o)))
++}
+diff --git a/object_goreflect.go b/object_goreflect.go
+index f5b5e8f..6585dc3 100644
+--- a/object_goreflect.go
++++ b/object_goreflect.go
+@@ -5,6 +5,7 @@ import (
+ 	"go/ast"
+ 	"reflect"
+ 	"strings"
++	"unsafe"
+ 
+ 	"github.com/dop251/goja/parser"
+ 	"github.com/dop251/goja/unistring"
+@@ -518,6 +519,9 @@ func (o *objectGoReflect) equal(other objectImpl) bool {
+ 	}
+ 	return false
+ }
++func (o *objectGoReflect) hash() uint64 {
++	return uint64(uintptr(unsafe.Pointer(o.fieldsValue.Addr().UnsafePointer())))
++}
+ 
+ func (o *objectGoReflect) reflectValue() reflect.Value {
+ 	return o.fieldsValue
+diff --git a/object_goreflect_test.go b/object_goreflect_test.go
+index 8b71b33..1ffa6f8 100644
+--- a/object_goreflect_test.go
++++ b/object_goreflect_test.go
+@@ -1148,6 +1148,7 @@ func TestGoReflectSymbols(t *testing.T) {
+ }
+ 
+ func TestGoReflectSymbolEqualityQuirk(t *testing.T) {
++	t.Skip("Is it right to create wrapper each time? I think it's more correct to return the same object")
+ 	type Field struct {
+ 	}
+ 	type S struct {
+diff --git a/object_goslice.go b/object_goslice.go
+index 1a52207..36bc52f 100644
+--- a/object_goslice.go
++++ b/object_goslice.go
+@@ -5,6 +5,7 @@ import (
+ 	"math/bits"
+ 	"reflect"
+ 	"strconv"
++	"unsafe"
+ 
+ 	"github.com/dop251/goja/unistring"
+ )
+@@ -317,6 +318,9 @@ func (o *objectGoSlice) equal(other objectImpl) bool {
+ 	}
+ 	return false
+ }
++func (o *objectGoSlice) hash() uint64 {
++	return uint64(uintptr(unsafe.Pointer(o.data)))
++}
+ 
+ func (o *objectGoSlice) esValue() Value {
+ 	return o.val
+diff --git a/vm.go b/vm.go
+index 0782930..0485910 100644
+--- a/vm.go
++++ b/vm.go
+@@ -9,6 +9,7 @@ import (
+ 	"sync"
+ 	"sync/atomic"
+ 	"time"
++	"unsafe"
+ 
+ 	"github.com/dop251/goja/unistring"
+ )
+@@ -5273,6 +5274,10 @@ func (a *taggedTemplateArray) equal(other objectImpl) bool {
+ 	return false
+ }
+ 
++func (a *taggedTemplateArray) hash() uint64 {
++	return uint64(uintptr(unsafe.Pointer(a.idPtr)))
++}
++
+ func (c *getTaggedTmplObject) exec(vm *vm) {
+ 	cooked := vm.r.newArrayObject()
+ 	setArrayValues(cooked, c.cooked)

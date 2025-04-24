@@ -1,0 +1,115 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    26
+  ],
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [],
+        "range": [
+          23,
+          25
+        ],
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 1
+          },
+          "start": {
+            "column": 23,
+            "line": 1
+          }
+        }
+      },
+      "declare": true,
+      "global": false,
+      "id": {
+        "type": "TSQualifiedName",
+        "range": [
+          15,
+          22
+        ],
+        "left": {
+          "type": "Identifier",
+          "range": [
+            15,
+            18
+          ],
+          "decorators": [],
+          "name": "abc",
+          "optional": false,
+          "loc": {
+            "end": {
+              "column": 18,
+              "line": 1
+            },
+            "start": {
+              "column": 15,
+              "line": 1
+            }
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "range": [
+            19,
+            22
+          ],
+          "decorators": [],
+          "name": "def",
+          "optional": false,
+          "loc": {
+            "end": {
+              "column": 22,
+              "line": 1
+            },
+            "start": {
+              "column": 19,
+              "line": 1
+            }
+          }
+        },
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 1
+          },
+          "start": {
+            "column": 15,
+            "line": 1
+          }
+        }
+      },
+      "kind": "module",
+      "range": [
+        0,
+        25
+      ],
+      "loc": {
+        "end": {
+          "column": 25,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

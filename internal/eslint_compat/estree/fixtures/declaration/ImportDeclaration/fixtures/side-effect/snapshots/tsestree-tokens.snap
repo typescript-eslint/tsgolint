@@ -1,0 +1,56 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 6,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      6
+    ],
+    "value": "import"
+  },
+  {
+    "type": "String",
+    "loc": {
+      "end": {
+        "column": 12,
+        "line": 1
+      },
+      "start": {
+        "column": 7,
+        "line": 1
+      }
+    },
+    "range": [
+      7,
+      12
+    ],
+    "value": "'mod'"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 13,
+        "line": 1
+      },
+      "start": {
+        "column": 12,
+        "line": 1
+      }
+    },
+    "range": [
+      12,
+      13
+    ],
+    "value": ";"
+  }
+]

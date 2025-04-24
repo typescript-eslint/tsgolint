@@ -1,0 +1,59 @@
+{
+  "type": "Program",
+  "range": [
+    73,
+    99
+  ],
+  "body": [
+    {
+      "type": "ExportAllDeclaration",
+      "attributes": [],
+      "exported": null,
+      "exportKind": "type",
+      "source": {
+        "type": "Literal",
+        "raw": "'bar'",
+        "value": "bar",
+        "range": [
+          92,
+          97
+        ],
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 3
+          },
+          "start": {
+            "column": 19,
+            "line": 3
+          }
+        }
+      },
+      "range": [
+        73,
+        98
+      ],
+      "loc": {
+        "end": {
+          "column": 25,
+          "line": 3
+        },
+        "start": {
+          "column": 0,
+          "line": 3
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 4
+    },
+    "start": {
+      "column": 0,
+      "line": 3
+    }
+  }
+}

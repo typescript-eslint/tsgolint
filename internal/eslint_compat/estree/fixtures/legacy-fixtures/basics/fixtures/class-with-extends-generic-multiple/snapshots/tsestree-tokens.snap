@@ -1,0 +1,290 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 5,
+        "line": 3
+      },
+      "start": {
+        "column": 0,
+        "line": 3
+      }
+    },
+    "range": [
+      73,
+      78
+    ],
+    "value": "class"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 9,
+        "line": 3
+      },
+      "start": {
+        "column": 6,
+        "line": 3
+      }
+    },
+    "range": [
+      79,
+      82
+    ],
+    "value": "Foo"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 3
+      },
+      "start": {
+        "column": 9,
+        "line": 3
+      }
+    },
+    "range": [
+      82,
+      83
+    ],
+    "value": "<"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 3
+      },
+      "start": {
+        "column": 10,
+        "line": 3
+      }
+    },
+    "range": [
+      83,
+      84
+    ],
+    "value": "A"
+  },
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 19,
+        "line": 3
+      },
+      "start": {
+        "column": 12,
+        "line": 3
+      }
+    },
+    "range": [
+      85,
+      92
+    ],
+    "value": "extends"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 21,
+        "line": 3
+      },
+      "start": {
+        "column": 20,
+        "line": 3
+      }
+    },
+    "range": [
+      93,
+      94
+    ],
+    "value": "B"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 3
+      },
+      "start": {
+        "column": 21,
+        "line": 3
+      }
+    },
+    "range": [
+      94,
+      95
+    ],
+    "value": ">"
+  },
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 30,
+        "line": 3
+      },
+      "start": {
+        "column": 23,
+        "line": 3
+      }
+    },
+    "range": [
+      96,
+      103
+    ],
+    "value": "extends"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 34,
+        "line": 3
+      },
+      "start": {
+        "column": 31,
+        "line": 3
+      }
+    },
+    "range": [
+      104,
+      107
+    ],
+    "value": "Bar"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 35,
+        "line": 3
+      },
+      "start": {
+        "column": 34,
+        "line": 3
+      }
+    },
+    "range": [
+      107,
+      108
+    ],
+    "value": "<"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 36,
+        "line": 3
+      },
+      "start": {
+        "column": 35,
+        "line": 3
+      }
+    },
+    "range": [
+      108,
+      109
+    ],
+    "value": "C"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 37,
+        "line": 3
+      },
+      "start": {
+        "column": 36,
+        "line": 3
+      }
+    },
+    "range": [
+      109,
+      110
+    ],
+    "value": ","
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 39,
+        "line": 3
+      },
+      "start": {
+        "column": 38,
+        "line": 3
+      }
+    },
+    "range": [
+      111,
+      112
+    ],
+    "value": "D"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 40,
+        "line": 3
+      },
+      "start": {
+        "column": 39,
+        "line": 3
+      }
+    },
+    "range": [
+      112,
+      113
+    ],
+    "value": ">"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 42,
+        "line": 3
+      },
+      "start": {
+        "column": 41,
+        "line": 3
+      }
+    },
+    "range": [
+      114,
+      115
+    ],
+    "value": "{"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 43,
+        "line": 3
+      },
+      "start": {
+        "column": 42,
+        "line": 3
+      }
+    },
+    "range": [
+      115,
+      116
+    ],
+    "value": "}"
+  }
+]

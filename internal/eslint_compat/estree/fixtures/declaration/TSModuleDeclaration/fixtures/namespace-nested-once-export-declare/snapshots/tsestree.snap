@@ -1,0 +1,115 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    29
+  ],
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [],
+        "range": [
+          26,
+          28
+        ],
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 1
+          },
+          "start": {
+            "column": 26,
+            "line": 1
+          }
+        }
+      },
+      "declare": true,
+      "global": false,
+      "id": {
+        "type": "TSQualifiedName",
+        "range": [
+          18,
+          25
+        ],
+        "left": {
+          "type": "Identifier",
+          "range": [
+            18,
+            21
+          ],
+          "decorators": [],
+          "name": "abd",
+          "optional": false,
+          "loc": {
+            "end": {
+              "column": 21,
+              "line": 1
+            },
+            "start": {
+              "column": 18,
+              "line": 1
+            }
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "range": [
+            22,
+            25
+          ],
+          "decorators": [],
+          "name": "def",
+          "optional": false,
+          "loc": {
+            "end": {
+              "column": 25,
+              "line": 1
+            },
+            "start": {
+              "column": 22,
+              "line": 1
+            }
+          }
+        },
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 1
+          },
+          "start": {
+            "column": 18,
+            "line": 1
+          }
+        }
+      },
+      "kind": "namespace",
+      "range": [
+        0,
+        28
+      ],
+      "loc": {
+        "end": {
+          "column": 28,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 6,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      6
+    ],
+    "value": "module"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 10,
+        "line": 1
+      },
+      "start": {
+        "column": 7,
+        "line": 1
+      }
+    },
+    "range": [
+      7,
+      10
+    ],
+    "value": "abc"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 1
+      },
+      "start": {
+        "column": 10,
+        "line": 1
+      }
+    },
+    "range": [
+      10,
+      11
+    ],
+    "value": "."
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 14,
+        "line": 1
+      },
+      "start": {
+        "column": 11,
+        "line": 1
+      }
+    },
+    "range": [
+      11,
+      14
+    ],
+    "value": "def"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 15,
+        "line": 1
+      },
+      "start": {
+        "column": 14,
+        "line": 1
+      }
+    },
+    "range": [
+      14,
+      15
+    ],
+    "value": "."
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 18,
+        "line": 1
+      },
+      "start": {
+        "column": 15,
+        "line": 1
+      }
+    },
+    "range": [
+      15,
+      18
+    ],
+    "value": "ghi"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 20,
+        "line": 1
+      },
+      "start": {
+        "column": 19,
+        "line": 1
+      }
+    },
+    "range": [
+      19,
+      20
+    ],
+    "value": "{"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 21,
+        "line": 1
+      },
+      "start": {
+        "column": 20,
+        "line": 1
+      }
+    },
+    "range": [
+      20,
+      21
+    ],
+    "value": "}"
+  }
+]

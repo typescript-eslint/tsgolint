@@ -1,0 +1,74 @@
+[
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 7,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      7
+    ],
+    "value": "declare"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 14,
+        "line": 1
+      },
+      "start": {
+        "column": 8,
+        "line": 1
+      }
+    },
+    "range": [
+      8,
+      14
+    ],
+    "value": "module"
+  },
+  {
+    "type": "String",
+    "loc": {
+      "end": {
+        "column": 18,
+        "line": 1
+      },
+      "start": {
+        "column": 15,
+        "line": 1
+      }
+    },
+    "range": [
+      15,
+      18
+    ],
+    "value": "'a'"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 19,
+        "line": 1
+      },
+      "start": {
+        "column": 18,
+        "line": 1
+      }
+    },
+    "range": [
+      18,
+      19
+    ],
+    "value": ";"
+  }
+]

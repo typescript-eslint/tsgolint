@@ -1,0 +1,92 @@
+[
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 1,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      1
+    ],
+    "value": "<"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 2,
+        "line": 1
+      },
+      "start": {
+        "column": 1,
+        "line": 1
+      }
+    },
+    "range": [
+      1,
+      2
+    ],
+    "value": ">"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 3,
+        "line": 1
+      },
+      "start": {
+        "column": 2,
+        "line": 1
+      }
+    },
+    "range": [
+      2,
+      3
+    ],
+    "value": "<"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 4,
+        "line": 1
+      },
+      "start": {
+        "column": 3,
+        "line": 1
+      }
+    },
+    "range": [
+      3,
+      4
+    ],
+    "value": "/"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 5,
+        "line": 1
+      },
+      "start": {
+        "column": 4,
+        "line": 1
+      }
+    },
+    "range": [
+      4,
+      5
+    ],
+    "value": ">"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "type": "Program",
+  "range": [
+    73,
+    109
+  ],
+  "body": [
+    {
+      "type": "ExportDefaultDeclaration",
+      "range": [
+        81,
+        108
+      ],
+      "declaration": {
+        "type": "ClassDeclaration",
+        "abstract": false,
+        "body": {
+          "type": "ClassBody",
+          "range": [
+            106,
+            108
+          ],
+          "body": [],
+          "loc": {
+            "end": {
+              "column": 27,
+              "line": 4
+            },
+            "start": {
+              "column": 25,
+              "line": 4
+            }
+          }
+        },
+        "declare": false,
+        "decorators": [
+          {
+            "type": "Decorator",
+            "expression": {
+              "type": "Identifier",
+              "decorators": [],
+              "name": "sealed",
+              "optional": false,
+              "range": [
+                74,
+                80
+              ],
+              "loc": {
+                "end": {
+                  "column": 7,
+                  "line": 3
+                },
+                "start": {
+                  "column": 1,
+                  "line": 3
+                }
+              }
+            },
+            "range": [
+              73,
+              80
+            ],
+            "loc": {
+              "end": {
+                "column": 7,
+                "line": 3
+              },
+              "start": {
+                "column": 0,
+                "line": 3
+              }
+            }
+          }
+        ],
+        "id": {
+          "type": "Identifier",
+          "decorators": [],
+          "name": "Qux",
+          "optional": false,
+          "range": [
+            102,
+            105
+          ],
+          "loc": {
+            "end": {
+              "column": 24,
+              "line": 4
+            },
+            "start": {
+              "column": 21,
+              "line": 4
+            }
+          }
+        },
+        "implements": [],
+        "superClass": null,
+        "range": [
+          96,
+          108
+        ],
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 4
+          },
+          "start": {
+            "column": 15,
+            "line": 4
+          }
+        }
+      },
+      "exportKind": "value",
+      "loc": {
+        "end": {
+          "column": 27,
+          "line": 4
+        },
+        "start": {
+          "column": 0,
+          "line": 4
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 5
+    },
+    "start": {
+      "column": 0,
+      "line": 3
+    }
+  }
+}

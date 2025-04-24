@@ -1,0 +1,128 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 71,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      71
+    ],
+    "value": " TODO: This fixture might be too large, and if so should be split up."
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 19,
+        "line": 3
+      },
+      "start": {
+        "column": 4,
+        "line": 3
+      }
+    },
+    "range": [
+      77,
+      92
+    ],
+    "value": " comment 1 "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 37,
+        "line": 3
+      },
+      "start": {
+        "column": 22,
+        "line": 3
+      }
+    },
+    "range": [
+      95,
+      110
+    ],
+    "value": " comment 2 "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 4
+      },
+      "start": {
+        "column": 13,
+        "line": 4
+      }
+    },
+    "range": [
+      128,
+      137
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 34,
+        "line": 4
+      },
+      "start": {
+        "column": 25,
+        "line": 4
+      }
+    },
+    "range": [
+      140,
+      149
+    ],
+    "value": " bbb "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 5
+      },
+      "start": {
+        "column": 13,
+        "line": 5
+      }
+    },
+    "range": [
+      169,
+      178
+    ],
+    "value": " aaa "
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 34,
+        "line": 5
+      },
+      "start": {
+        "column": 25,
+        "line": 5
+      }
+    },
+    "range": [
+      181,
+      190
+    ],
+    "value": " bbb "
+  }
+]

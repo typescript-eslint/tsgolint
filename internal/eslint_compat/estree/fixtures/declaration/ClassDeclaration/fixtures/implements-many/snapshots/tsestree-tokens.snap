@@ -1,0 +1,182 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 5,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      5
+    ],
+    "value": "class"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 9,
+        "line": 1
+      },
+      "start": {
+        "column": 6,
+        "line": 1
+      }
+    },
+    "range": [
+      6,
+      9
+    ],
+    "value": "Foo"
+  },
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 20,
+        "line": 1
+      },
+      "start": {
+        "column": 10,
+        "line": 1
+      }
+    },
+    "range": [
+      10,
+      20
+    ],
+    "value": "implements"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 27,
+        "line": 1
+      },
+      "start": {
+        "column": 21,
+        "line": 1
+      }
+    },
+    "range": [
+      21,
+      27
+    ],
+    "value": "Object"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 28,
+        "line": 1
+      },
+      "start": {
+        "column": 27,
+        "line": 1
+      }
+    },
+    "range": [
+      27,
+      28
+    ],
+    "value": ","
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 37,
+        "line": 1
+      },
+      "start": {
+        "column": 29,
+        "line": 1
+      }
+    },
+    "range": [
+      29,
+      37
+    ],
+    "value": "Function"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 38,
+        "line": 1
+      },
+      "start": {
+        "column": 37,
+        "line": 1
+      }
+    },
+    "range": [
+      37,
+      38
+    ],
+    "value": ","
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 45,
+        "line": 1
+      },
+      "start": {
+        "column": 39,
+        "line": 1
+      }
+    },
+    "range": [
+      39,
+      45
+    ],
+    "value": "RegExp"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 47,
+        "line": 1
+      },
+      "start": {
+        "column": 46,
+        "line": 1
+      }
+    },
+    "range": [
+      46,
+      47
+    ],
+    "value": "{"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 48,
+        "line": 1
+      },
+      "start": {
+        "column": 47,
+        "line": 1
+      }
+    },
+    "range": [
+      47,
+      48
+    ],
+    "value": "}"
+  }
+]

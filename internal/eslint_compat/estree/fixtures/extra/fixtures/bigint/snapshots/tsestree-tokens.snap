@@ -1,0 +1,20 @@
+[
+  {
+    "type": "Numeric",
+    "loc": {
+      "end": {
+        "column": 17,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      17
+    ],
+    "value": "9007199254740993n"
+  }
+]

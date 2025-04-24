@@ -1,0 +1,20 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 9
+      },
+      "start": {
+        "column": 4,
+        "line": 9
+      }
+    },
+    "range": [
+      88,
+      106
+    ],
+    "value": " prettier-ignore"
+  }
+]

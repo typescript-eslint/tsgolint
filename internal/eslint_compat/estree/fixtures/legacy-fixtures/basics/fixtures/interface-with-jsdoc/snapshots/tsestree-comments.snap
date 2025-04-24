@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 71,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      71
+    ],
+    "value": " TODO: This fixture might be too large, and if so should be split up."
+  },
+  {
+    "type": "Block",
+    "loc": {
+      "end": {
+        "column": 5,
+        "line": 7
+      },
+      "start": {
+        "column": 2,
+        "line": 4
+      }
+    },
+    "range": [
+      92,
+      135
+    ],
+    "value": "*\n   * Comment Line 1\n   * @baz bar\n   "
+  }
+]

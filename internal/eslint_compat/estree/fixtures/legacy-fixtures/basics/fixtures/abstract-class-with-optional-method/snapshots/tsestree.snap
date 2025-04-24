@@ -1,0 +1,259 @@
+{
+  "type": "Program",
+  "range": [
+    73,
+    150
+  ],
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "range": [
+        73,
+        149
+      ],
+      "attributes": [],
+      "declaration": {
+        "type": "ClassDeclaration",
+        "abstract": true,
+        "body": {
+          "type": "ClassBody",
+          "range": [
+            110,
+            149
+          ],
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "computed": false,
+              "decorators": [],
+              "key": {
+                "type": "Identifier",
+                "decorators": [],
+                "name": "createSocket",
+                "optional": false,
+                "range": [
+                  114,
+                  126
+                ],
+                "loc": {
+                  "end": {
+                    "column": 14,
+                    "line": 4
+                  },
+                  "start": {
+                    "column": 2,
+                    "line": 4
+                  }
+                }
+              },
+              "kind": "method",
+              "optional": true,
+              "override": false,
+              "static": false,
+              "value": {
+                "type": "TSEmptyBodyFunctionExpression",
+                "range": [
+                  127,
+                  147
+                ],
+                "async": false,
+                "body": null,
+                "declare": false,
+                "expression": false,
+                "generator": false,
+                "id": null,
+                "params": [],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "loc": {
+                    "end": {
+                      "column": 34,
+                      "line": 4
+                    },
+                    "start": {
+                      "column": 17,
+                      "line": 4
+                    }
+                  },
+                  "range": [
+                    129,
+                    146
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeArguments": {
+                      "type": "TSTypeParameterInstantiation",
+                      "range": [
+                        138,
+                        146
+                      ],
+                      "params": [
+                        {
+                          "type": "TSStringKeyword",
+                          "range": [
+                            139,
+                            145
+                          ],
+                          "loc": {
+                            "end": {
+                              "column": 33,
+                              "line": 4
+                            },
+                            "start": {
+                              "column": 27,
+                              "line": 4
+                            }
+                          }
+                        }
+                      ],
+                      "loc": {
+                        "end": {
+                          "column": 34,
+                          "line": 4
+                        },
+                        "start": {
+                          "column": 26,
+                          "line": 4
+                        }
+                      }
+                    },
+                    "typeName": {
+                      "type": "Identifier",
+                      "decorators": [],
+                      "name": "Promise",
+                      "optional": false,
+                      "range": [
+                        131,
+                        138
+                      ],
+                      "loc": {
+                        "end": {
+                          "column": 26,
+                          "line": 4
+                        },
+                        "start": {
+                          "column": 19,
+                          "line": 4
+                        }
+                      }
+                    },
+                    "range": [
+                      131,
+                      146
+                    ],
+                    "loc": {
+                      "end": {
+                        "column": 34,
+                        "line": 4
+                      },
+                      "start": {
+                        "column": 19,
+                        "line": 4
+                      }
+                    }
+                  }
+                },
+                "loc": {
+                  "end": {
+                    "column": 35,
+                    "line": 4
+                  },
+                  "start": {
+                    "column": 15,
+                    "line": 4
+                  }
+                }
+              },
+              "range": [
+                114,
+                147
+              ],
+              "loc": {
+                "end": {
+                  "column": 35,
+                  "line": 4
+                },
+                "start": {
+                  "column": 2,
+                  "line": 4
+                }
+              }
+            }
+          ],
+          "loc": {
+            "end": {
+              "column": 1,
+              "line": 5
+            },
+            "start": {
+              "column": 37,
+              "line": 3
+            }
+          }
+        },
+        "declare": false,
+        "decorators": [],
+        "id": {
+          "type": "Identifier",
+          "decorators": [],
+          "name": "AbstractSocket",
+          "optional": false,
+          "range": [
+            95,
+            109
+          ],
+          "loc": {
+            "end": {
+              "column": 36,
+              "line": 3
+            },
+            "start": {
+              "column": 22,
+              "line": 3
+            }
+          }
+        },
+        "implements": [],
+        "superClass": null,
+        "range": [
+          80,
+          149
+        ],
+        "loc": {
+          "end": {
+            "column": 1,
+            "line": 5
+          },
+          "start": {
+            "column": 7,
+            "line": 3
+          }
+        }
+      },
+      "exportKind": "value",
+      "source": null,
+      "specifiers": [],
+      "loc": {
+        "end": {
+          "column": 1,
+          "line": 5
+        },
+        "start": {
+          "column": 0,
+          "line": 3
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 6
+    },
+    "start": {
+      "column": 0,
+      "line": 3
+    }
+  }
+}

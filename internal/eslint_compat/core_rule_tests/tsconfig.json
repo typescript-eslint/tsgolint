@@ -1,0 +1,12 @@
+
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": [],
+    "experimentalDecorators": true
+  },
+}

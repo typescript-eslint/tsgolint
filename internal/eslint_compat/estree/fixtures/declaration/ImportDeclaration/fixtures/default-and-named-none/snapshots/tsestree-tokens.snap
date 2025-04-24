@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 6,
+        "line": 2
+      },
+      "start": {
+        "column": 0,
+        "line": 2
+      }
+    },
+    "range": [
+      19,
+      25
+    ],
+    "value": "import"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 8,
+        "line": 2
+      },
+      "start": {
+        "column": 7,
+        "line": 2
+      }
+    },
+    "range": [
+      26,
+      27
+    ],
+    "value": "a"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 9,
+        "line": 2
+      },
+      "start": {
+        "column": 8,
+        "line": 2
+      }
+    },
+    "range": [
+      27,
+      28
+    ],
+    "value": ","
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 11,
+        "line": 2
+      },
+      "start": {
+        "column": 10,
+        "line": 2
+      }
+    },
+    "range": [
+      29,
+      30
+    ],
+    "value": "{"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 12,
+        "line": 2
+      },
+      "start": {
+        "column": 11,
+        "line": 2
+      }
+    },
+    "range": [
+      30,
+      31
+    ],
+    "value": "}"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 17,
+        "line": 2
+      },
+      "start": {
+        "column": 13,
+        "line": 2
+      }
+    },
+    "range": [
+      32,
+      36
+    ],
+    "value": "from"
+  },
+  {
+    "type": "String",
+    "loc": {
+      "end": {
+        "column": 23,
+        "line": 2
+      },
+      "start": {
+        "column": 18,
+        "line": 2
+      }
+    },
+    "range": [
+      37,
+      42
+    ],
+    "value": "'mod'"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 24,
+        "line": 2
+      },
+      "start": {
+        "column": 23,
+        "line": 2
+      }
+    },
+    "range": [
+      42,
+      43
+    ],
+    "value": ";"
+  }
+]

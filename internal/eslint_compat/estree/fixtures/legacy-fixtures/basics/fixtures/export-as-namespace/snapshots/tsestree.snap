@@ -1,0 +1,57 @@
+{
+  "type": "Program",
+  "range": [
+    73,
+    96
+  ],
+  "body": [
+    {
+      "type": "TSNamespaceExportDeclaration",
+      "id": {
+        "type": "Identifier",
+        "decorators": [],
+        "name": "a",
+        "optional": false,
+        "range": [
+          93,
+          94
+        ],
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 3
+          },
+          "start": {
+            "column": 20,
+            "line": 3
+          }
+        }
+      },
+      "range": [
+        73,
+        95
+      ],
+      "loc": {
+        "end": {
+          "column": 22,
+          "line": 3
+        },
+        "start": {
+          "column": 0,
+          "line": 3
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 4
+    },
+    "start": {
+      "column": 0,
+      "line": 3
+    }
+  }
+}

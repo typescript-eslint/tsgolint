@@ -1,0 +1,59 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    20
+  ],
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "kind": "module",
+      "declare": true,
+      "global": false,
+      "id": {
+        "type": "Literal",
+        "raw": "'a'",
+        "value": "a",
+        "range": [
+          15,
+          18
+        ],
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 1
+          },
+          "start": {
+            "column": 15,
+            "line": 1
+          }
+        }
+      },
+      "range": [
+        0,
+        19
+      ],
+      "loc": {
+        "end": {
+          "column": 19,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

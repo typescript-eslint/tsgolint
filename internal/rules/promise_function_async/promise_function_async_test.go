@@ -264,7 +264,7 @@ const nonAsyncPromiseFunctionExpressionB = function () {
 };
       `,
 			Output: []string{`
-const nonAsyncPromiseFunctionExpressionB = async function () {
+const nonAsyncPromiseFunctionExpressionB =  async function () {
   return new Promise<void>();
 };
       `,
@@ -282,7 +282,7 @@ function nonAsyncPromiseFunctionDeclarationA(p: Promise<void>) {
 }
       `,
 			Output: []string{`
-async function nonAsyncPromiseFunctionDeclarationA(p: Promise<void>) {
+ async function nonAsyncPromiseFunctionDeclarationA(p: Promise<void>) {
   return p;
 }
       `,
@@ -300,7 +300,7 @@ function nonAsyncPromiseFunctionDeclarationB() {
 }
       `,
 			Output: []string{`
-async function nonAsyncPromiseFunctionDeclarationB() {
+ async function nonAsyncPromiseFunctionDeclarationB() {
   return new Promise<void>();
 }
       `,
@@ -316,7 +316,7 @@ async function nonAsyncPromiseFunctionDeclarationB() {
 const nonAsyncPromiseArrowFunctionA = (p: Promise<void>) => p;
       `,
 			Output: []string{`
-const nonAsyncPromiseArrowFunctionA = async (p: Promise<void>) => p;
+const nonAsyncPromiseArrowFunctionA =  async (p: Promise<void>) => p;
       `,
 			},
 			Errors: []rule_tester.InvalidTestCaseError{
@@ -330,7 +330,7 @@ const nonAsyncPromiseArrowFunctionA = async (p: Promise<void>) => p;
 const nonAsyncPromiseArrowFunctionB = () => new Promise<void>();
       `,
 			Output: []string{`
-const nonAsyncPromiseArrowFunctionB = async () => new Promise<void>();
+const nonAsyncPromiseArrowFunctionB =  async () => new Promise<void>();
       `,
 			},
 			Errors: []rule_tester.InvalidTestCaseError{

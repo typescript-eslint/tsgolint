@@ -1,0 +1,89 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    12
+  ],
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "JSXFragment",
+        "children": [],
+        "closingFragment": {
+          "type": "JSXClosingFragment",
+          "range": [
+            2,
+            5
+          ],
+          "loc": {
+            "end": {
+              "column": 5,
+              "line": 1
+            },
+            "start": {
+              "column": 2,
+              "line": 1
+            }
+          }
+        },
+        "openingFragment": {
+          "type": "JSXOpeningFragment",
+          "range": [
+            0,
+            2
+          ],
+          "loc": {
+            "end": {
+              "column": 2,
+              "line": 1
+            },
+            "start": {
+              "column": 0,
+              "line": 1
+            }
+          }
+        },
+        "range": [
+          0,
+          5
+        ],
+        "loc": {
+          "end": {
+            "column": 5,
+            "line": 1
+          },
+          "start": {
+            "column": 0,
+            "line": 1
+          }
+        }
+      },
+      "range": [
+        0,
+        5
+      ],
+      "loc": {
+        "end": {
+          "column": 5,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "Program",
+  "range": [
+    73,
+    95
+  ],
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [],
+        "range": [
+          92,
+          94
+        ],
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 3
+          },
+          "start": {
+            "column": 19,
+            "line": 3
+          }
+        }
+      },
+      "declare": true,
+      "global": false,
+      "id": {
+        "type": "Identifier",
+        "range": [
+          88,
+          91
+        ],
+        "decorators": [],
+        "name": "Foo",
+        "optional": false,
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 3
+          },
+          "start": {
+            "column": 15,
+            "line": 3
+          }
+        }
+      },
+      "kind": "module",
+      "range": [
+        73,
+        94
+      ],
+      "loc": {
+        "end": {
+          "column": 21,
+          "line": 3
+        },
+        "start": {
+          "column": 0,
+          "line": 3
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 4
+    },
+    "start": {
+      "column": 0,
+      "line": 3
+    }
+  }
+}

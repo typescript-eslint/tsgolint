@@ -1,0 +1,21 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: auvred <aauvred@gmail.com>
+Date: Wed, 16 Apr 2025 07:39:02 +0300
+Subject: [PATCH] Export newRegExp
+
+
+diff --git a/builtin_regexp.go b/builtin_regexp.go
+index cdc0d9d..04aa7c0 100644
+--- a/builtin_regexp.go
++++ b/builtin_regexp.go
+@@ -308,6 +308,10 @@ func (r *Runtime) builtin_newRegExp(args []Value, proto *Object) *Object {
+ 	return r.newRegExp(patternVal, flagsVal, proto).val
+ }
+ 
++func (r *Runtime) NewRegExp(patternVal, flagsVal Value) *Object {
++	return r.newRegExp(patternVal, flagsVal, r.getRegExpPrototype()).val
++}
++
+ func (r *Runtime) newRegExp(patternVal, flagsVal Value, proto *Object) *regexpObject {
+ 	var pattern String
+ 	var flags string

@@ -1,0 +1,137 @@
+{
+  "type": "Program",
+  "range": [
+    73,
+    154
+  ],
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "abstract": false,
+      "body": {
+        "type": "ClassBody",
+        "range": [
+          151,
+          153
+        ],
+        "body": [],
+        "loc": {
+          "end": {
+            "column": 80,
+            "line": 3
+          },
+          "start": {
+            "column": 78,
+            "line": 3
+          }
+        }
+      },
+      "declare": false,
+      "decorators": [],
+      "id": {
+        "type": "Identifier",
+        "decorators": [],
+        "name": "ClassWithParentAndInterface",
+        "optional": false,
+        "range": [
+          79,
+          106
+        ],
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 3
+          },
+          "start": {
+            "column": 6,
+            "line": 3
+          }
+        }
+      },
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "decorators": [],
+            "name": "MyInterface",
+            "optional": false,
+            "range": [
+              139,
+              150
+            ],
+            "loc": {
+              "end": {
+                "column": 77,
+                "line": 3
+              },
+              "start": {
+                "column": 66,
+                "line": 3
+              }
+            }
+          },
+          "range": [
+            139,
+            150
+          ],
+          "loc": {
+            "end": {
+              "column": 77,
+              "line": 3
+            },
+            "start": {
+              "column": 66,
+              "line": 3
+            }
+          }
+        }
+      ],
+      "superClass": {
+        "type": "Identifier",
+        "decorators": [],
+        "name": "MyOtherClass",
+        "optional": false,
+        "range": [
+          115,
+          127
+        ],
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 3
+          },
+          "start": {
+            "column": 42,
+            "line": 3
+          }
+        }
+      },
+      "range": [
+        73,
+        153
+      ],
+      "loc": {
+        "end": {
+          "column": 80,
+          "line": 3
+        },
+        "start": {
+          "column": 0,
+          "line": 3
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 4
+    },
+    "start": {
+      "column": 0,
+      "line": 3
+    }
+  }
+}

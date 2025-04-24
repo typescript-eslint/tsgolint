@@ -1,0 +1,92 @@
+[
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 71,
+        "line": 1
+      },
+      "start": {
+        "column": 0,
+        "line": 1
+      }
+    },
+    "range": [
+      0,
+      71
+    ],
+    "value": " TODO: This fixture might be too large, and if so should be split up."
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 4
+      },
+      "start": {
+        "column": 15,
+        "line": 4
+      }
+    },
+    "range": [
+      131,
+      138
+    ],
+    "value": " okay"
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 31,
+        "line": 5
+      },
+      "start": {
+        "column": 22,
+        "line": 5
+      }
+    },
+    "range": [
+      161,
+      170
+    ],
+    "value": " error!"
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 22,
+        "line": 9
+      },
+      "start": {
+        "column": 15,
+        "line": 9
+      }
+    },
+    "range": [
+      228,
+      235
+    ],
+    "value": " okay"
+  },
+  {
+    "type": "Line",
+    "loc": {
+      "end": {
+        "column": 31,
+        "line": 10
+      },
+      "start": {
+        "column": 22,
+        "line": 10
+      }
+    },
+    "range": [
+      258,
+      267
+    ],
+    "value": " error!"
+  }
+]

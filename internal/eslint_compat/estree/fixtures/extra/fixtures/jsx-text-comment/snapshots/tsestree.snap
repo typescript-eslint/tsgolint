@@ -1,0 +1,147 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    20
+  ],
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "JSXElement",
+        "children": [
+          {
+            "type": "JSXText",
+            "range": [
+              3,
+              15
+            ],
+            "raw": "\n// comment\n",
+            "value": "\n// comment\n",
+            "loc": {
+              "end": {
+                "column": 0,
+                "line": 3
+              },
+              "start": {
+                "column": 3,
+                "line": 1
+              }
+            }
+          }
+        ],
+        "closingElement": {
+          "type": "JSXClosingElement",
+          "name": {
+            "type": "JSXIdentifier",
+            "name": "a",
+            "range": [
+              17,
+              18
+            ],
+            "loc": {
+              "end": {
+                "column": 3,
+                "line": 3
+              },
+              "start": {
+                "column": 2,
+                "line": 3
+              }
+            }
+          },
+          "range": [
+            15,
+            19
+          ],
+          "loc": {
+            "end": {
+              "column": 4,
+              "line": 3
+            },
+            "start": {
+              "column": 0,
+              "line": 3
+            }
+          }
+        },
+        "openingElement": {
+          "type": "JSXOpeningElement",
+          "attributes": [],
+          "name": {
+            "type": "JSXIdentifier",
+            "name": "a",
+            "range": [
+              1,
+              2
+            ],
+            "loc": {
+              "end": {
+                "column": 2,
+                "line": 1
+              },
+              "start": {
+                "column": 1,
+                "line": 1
+              }
+            }
+          },
+          "selfClosing": false,
+          "range": [
+            0,
+            3
+          ],
+          "loc": {
+            "end": {
+              "column": 3,
+              "line": 1
+            },
+            "start": {
+              "column": 0,
+              "line": 1
+            }
+          }
+        },
+        "range": [
+          0,
+          19
+        ],
+        "loc": {
+          "end": {
+            "column": 4,
+            "line": 3
+          },
+          "start": {
+            "column": 0,
+            "line": 1
+          }
+        }
+      },
+      "range": [
+        0,
+        19
+      ],
+      "loc": {
+        "end": {
+          "column": 4,
+          "line": 3
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 4
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

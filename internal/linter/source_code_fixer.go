@@ -47,7 +47,7 @@ func ApplyRuleFixes[M LintMessage](code string, diagnostics []M) (string, []M, b
 	lastFixEnd := 0
 	for _, diagnostic := range withFixes {
 		fixes := diagnostic.Fixes()
-		if lastFixEnd > fixes[0].Range.Pos() {
+		if lastFixEnd != 0 && lastFixEnd >= fixes[0].Range.Pos() {
 			unapplied = append(unapplied, diagnostic)
 			continue
 		}

@@ -16,6 +16,7 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/typescript-eslint/tsgolint/internal/eslint_compat"
 	"github.com/typescript-eslint/tsgolint/internal/linter"
 	"github.com/typescript-eslint/tsgolint/internal/rule"
 	"github.com/typescript-eslint/tsgolint/internal/utils"
@@ -222,22 +223,28 @@ func runMain() int {
 	flag.Usage = func() { fmt.Fprint(os.Stderr, usage) }
 
 	var (
-		help      bool
-		tsconfig  string
-		listFiles bool
+		help         bool
+		tsconfig     string
+		listFiles    bool
+		eslintCompat string
 
 		traceOut       string
 		cpuprofOut     string
+		memprofOut     string
+		gojaprofOut    string
 		singleThreaded bool
 	)
 
 	flag.StringVar(&tsconfig, "tsconfig", "", "which tsconfig to use")
 	flag.BoolVar(&listFiles, "list-files", false, "list matched files")
+	flag.StringVar(&eslintCompat, "eslint-compat", "", "")
 	flag.BoolVar(&help, "help", false, "show help")
 	flag.BoolVar(&help, "h", false, "show help")
 
 	flag.StringVar(&traceOut, "trace", "", "file to put trace to")
 	flag.StringVar(&cpuprofOut, "cpuprof", "", "file to put cpu profiling to")
+	flag.StringVar(&memprofOut, "memprof", "", "file to put allocs profiling to")
+	flag.StringVar(&gojaprofOut, "gojaprof", "", "file to put goja VM profiling to")
 	flag.BoolVar(&singleThreaded, "singleThreaded", false, "run in single threaded mode")
 
 	flag.Parse()
@@ -273,6 +280,20 @@ func runMain() int {
 			return 1
 		}
 		defer pprof.StopCPUProfile()
+	}
+	if memprofOut != "" {
+		f, err := os.Create(memprofOut)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "error creating memprof file: %v\n", err)
+			return 1
+		}
+		defer f.Close()
+		defer func() {
+			err = pprof.Lookup("allocs").WriteTo(f, 0)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "error writing pprof allocs: %v\n", err)
+			}
+		}()
 	}
 
 	currentDirectory, err := os.Getwd()
@@ -402,24 +423,45 @@ func runMain() int {
 		}
 	}()
 
-	err = linter.RunLinter(
-		program,
-		singleThreaded,
-		files,
-		func(sourceFile *ast.SourceFile) []linter.ConfiguredRule {
-			return utils.Map(rules, func(r rule.Rule) linter.ConfiguredRule {
-				return linter.ConfiguredRule{
-					Name: r.Name,
-					Run: func(ctx rule.RuleContext) rule.RuleListeners {
-						return r.Run(ctx, nil)
-					},
-				}
-			})
-		},
-		func(d rule.RuleDiagnostic) {
-			diagnosticsChan <- d
-		},
-	)
+	if eslintCompat == "" {
+		err = linter.RunLinter(
+			program,
+			singleThreaded,
+			files,
+			func(sourceFile *ast.SourceFile) []linter.ConfiguredRule {
+				return utils.Map(rules, func(r rule.Rule) linter.ConfiguredRule {
+					return linter.ConfiguredRule{
+						Name: r.Name,
+						Run: func(ctx rule.RuleContext) rule.RuleListeners {
+							return r.Run(ctx, nil)
+						},
+					}
+				})
+			},
+			func(d rule.RuleDiagnostic) {
+				diagnosticsChan <- d
+			},
+		)
+	} else {
+		err = eslint_compat.RunLinter(
+			`
+			import config from '`+eslintCompat+`'
+			import { adapter, analyzeAst } from 'virtual:adapter'
+
+			_tsgolint_run = (text, ast, onDiagnostic) => {
+				return adapter(config, text, ast, onDiagnostic)
+			}
+			_tsgolint_analyze = analyzeAst
+		`,
+			gojaprofOut,
+			program,
+			singleThreaded,
+			files,
+			func(d rule.RuleDiagnostic) {
+				diagnosticsChan <- d
+			},
+		)
+	}
 
 	close(diagnosticsChan)
 	if err != nil {
@@ -451,6 +493,7 @@ func runMain() int {
 	}
 	fmt.Fprintf(
 		os.Stdout,
+		// TODO: different stats for eslint compat mode
 		"Found %v%v\x1b[0m %v \x1b[2m(linted \x1b[1m%v\x1b[22m\x1b[2m %v with \x1b[1m%v\x1b[22m\x1b[2m %v in \x1b[1m%v\x1b[22m\x1b[2m using \x1b[1m%v\x1b[22m\x1b[2m threads)\n",
 		errorsColor,
 		errorsCount,

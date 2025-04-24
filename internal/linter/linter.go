@@ -47,7 +47,7 @@ func RunLinter(program *compiler.Program, singleThreaded bool, files []*ast.Sour
 								RuleName:    r.Name,
 								Range:       textRange,
 								Message:     msg,
-								Suggestions: &suggestions,
+								Suggestions: suggestions,
 								SourceFile:  file,
 							})
 						},
@@ -74,7 +74,7 @@ func RunLinter(program *compiler.Program, singleThreaded bool, files []*ast.Sour
 								RuleName:    r.Name,
 								Range:       utils.TrimNodeTextRange(file, node),
 								Message:     msg,
-								Suggestions: &suggestions,
+								Suggestions: suggestions,
 								SourceFile:  file,
 							})
 						},

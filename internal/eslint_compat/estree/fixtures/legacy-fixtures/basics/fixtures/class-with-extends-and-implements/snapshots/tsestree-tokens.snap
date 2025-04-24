@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 5,
+        "line": 3
+      },
+      "start": {
+        "column": 0,
+        "line": 3
+      }
+    },
+    "range": [
+      73,
+      78
+    ],
+    "value": "class"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 33,
+        "line": 3
+      },
+      "start": {
+        "column": 6,
+        "line": 3
+      }
+    },
+    "range": [
+      79,
+      106
+    ],
+    "value": "ClassWithParentAndInterface"
+  },
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 41,
+        "line": 3
+      },
+      "start": {
+        "column": 34,
+        "line": 3
+      }
+    },
+    "range": [
+      107,
+      114
+    ],
+    "value": "extends"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 54,
+        "line": 3
+      },
+      "start": {
+        "column": 42,
+        "line": 3
+      }
+    },
+    "range": [
+      115,
+      127
+    ],
+    "value": "MyOtherClass"
+  },
+  {
+    "type": "Keyword",
+    "loc": {
+      "end": {
+        "column": 65,
+        "line": 3
+      },
+      "start": {
+        "column": 55,
+        "line": 3
+      }
+    },
+    "range": [
+      128,
+      138
+    ],
+    "value": "implements"
+  },
+  {
+    "type": "Identifier",
+    "loc": {
+      "end": {
+        "column": 77,
+        "line": 3
+      },
+      "start": {
+        "column": 66,
+        "line": 3
+      }
+    },
+    "range": [
+      139,
+      150
+    ],
+    "value": "MyInterface"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 79,
+        "line": 3
+      },
+      "start": {
+        "column": 78,
+        "line": 3
+      }
+    },
+    "range": [
+      151,
+      152
+    ],
+    "value": "{"
+  },
+  {
+    "type": "Punctuator",
+    "loc": {
+      "end": {
+        "column": 80,
+        "line": 3
+      },
+      "start": {
+        "column": 79,
+        "line": 3
+      }
+    },
+    "range": [
+      152,
+      153
+    ],
+    "value": "}"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    28
+  ],
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "range": [
+        0,
+        27
+      ],
+      "attributes": [],
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [],
+          "range": [
+            25,
+            27
+          ],
+          "loc": {
+            "end": {
+              "column": 27,
+              "line": 1
+            },
+            "start": {
+              "column": 25,
+              "line": 1
+            }
+          }
+        },
+        "declare": false,
+        "global": false,
+        "id": {
+          "type": "TSQualifiedName",
+          "range": [
+            17,
+            24
+          ],
+          "left": {
+            "type": "Identifier",
+            "range": [
+              17,
+              20
+            ],
+            "decorators": [],
+            "name": "abd",
+            "optional": false,
+            "loc": {
+              "end": {
+                "column": 20,
+                "line": 1
+              },
+              "start": {
+                "column": 17,
+                "line": 1
+              }
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "range": [
+              21,
+              24
+            ],
+            "decorators": [],
+            "name": "def",
+            "optional": false,
+            "loc": {
+              "end": {
+                "column": 24,
+                "line": 1
+              },
+              "start": {
+                "column": 21,
+                "line": 1
+              }
+            }
+          },
+          "loc": {
+            "end": {
+              "column": 24,
+              "line": 1
+            },
+            "start": {
+              "column": 17,
+              "line": 1
+            }
+          }
+        },
+        "kind": "namespace",
+        "range": [
+          7,
+          27
+        ],
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 1
+          },
+          "start": {
+            "column": 7,
+            "line": 1
+          }
+        }
+      },
+      "exportKind": "value",
+      "source": null,
+      "specifiers": [],
+      "loc": {
+        "end": {
+          "column": 27,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

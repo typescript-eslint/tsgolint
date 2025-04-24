@@ -1,0 +1,173 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    32
+  ],
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "range": [
+        0,
+        31
+      ],
+      "attributes": [],
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [],
+          "range": [
+            29,
+            31
+          ],
+          "loc": {
+            "end": {
+              "column": 31,
+              "line": 1
+            },
+            "start": {
+              "column": 29,
+              "line": 1
+            }
+          }
+        },
+        "declare": false,
+        "global": false,
+        "id": {
+          "type": "TSQualifiedName",
+          "range": [
+            17,
+            28
+          ],
+          "left": {
+            "type": "TSQualifiedName",
+            "range": [
+              17,
+              24
+            ],
+            "left": {
+              "type": "Identifier",
+              "range": [
+                17,
+                20
+              ],
+              "decorators": [],
+              "name": "abc",
+              "optional": false,
+              "loc": {
+                "end": {
+                  "column": 20,
+                  "line": 1
+                },
+                "start": {
+                  "column": 17,
+                  "line": 1
+                }
+              }
+            },
+            "right": {
+              "type": "Identifier",
+              "range": [
+                21,
+                24
+              ],
+              "decorators": [],
+              "name": "def",
+              "optional": false,
+              "loc": {
+                "end": {
+                  "column": 24,
+                  "line": 1
+                },
+                "start": {
+                  "column": 21,
+                  "line": 1
+                }
+              }
+            },
+            "loc": {
+              "end": {
+                "column": 24,
+                "line": 1
+              },
+              "start": {
+                "column": 17,
+                "line": 1
+              }
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "range": [
+              25,
+              28
+            ],
+            "decorators": [],
+            "name": "ghi",
+            "optional": false,
+            "loc": {
+              "end": {
+                "column": 28,
+                "line": 1
+              },
+              "start": {
+                "column": 25,
+                "line": 1
+              }
+            }
+          },
+          "loc": {
+            "end": {
+              "column": 28,
+              "line": 1
+            },
+            "start": {
+              "column": 17,
+              "line": 1
+            }
+          }
+        },
+        "kind": "namespace",
+        "range": [
+          7,
+          31
+        ],
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 1
+          },
+          "start": {
+            "column": 7,
+            "line": 1
+          }
+        }
+      },
+      "exportKind": "value",
+      "source": null,
+      "specifiers": [],
+      "loc": {
+        "end": {
+          "column": 31,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

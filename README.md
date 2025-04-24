@@ -83,10 +83,14 @@ See [benchmarks](./benchmarks/README.md) for more info.
 ## Building `tsgolint`
 
 ```bash
-git submodule update --init                       # init typescript-go submodule
+git submodule update --init
 
 cd typescript-go
-git am --3way --no-gpg-sign ../patches/*.patch    # apply typescript-go patches
+git am --3way --no-gpg-sign ../patches/*.patch
+cd ..
+
+cd goja
+git am --3way --no-gpg-sign ../goja-patches/*.patch
 cd ..
 
 go build -o tsgolint ./cmd/tsgolint

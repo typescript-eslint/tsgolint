@@ -1,0 +1,60 @@
+{
+  "type": "Program",
+  "range": [
+    0,
+    21
+  ],
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "raw": "/^\\/f+[a-z]\\d(?:x)$/",
+        "regex": {
+          "flags": "",
+          "pattern": "^\\/f+[a-z]\\d(?:x)$"
+        },
+        "value": "RegExp:/^\\/f+[a-z]\\d(?:x)$/",
+        "range": [
+          0,
+          20
+        ],
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 1
+          },
+          "start": {
+            "column": 0,
+            "line": 1
+          }
+        }
+      },
+      "range": [
+        0,
+        20
+      ],
+      "loc": {
+        "end": {
+          "column": 20,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "script",
+  "loc": {
+    "end": {
+      "column": 0,
+      "line": 2
+    },
+    "start": {
+      "column": 0,
+      "line": 1
+    }
+  }
+}

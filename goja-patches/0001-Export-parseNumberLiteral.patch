@@ -1,0 +1,20 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: auvred <aauvred@gmail.com>
+Date: Wed, 16 Apr 2025 07:38:50 +0300
+Subject: [PATCH] Export parseNumberLiteral
+
+
+diff --git a/parser/lexer.go b/parser/lexer.go
+index 9a9c723..98400fd 100644
+--- a/parser/lexer.go
++++ b/parser/lexer.go
+@@ -901,6 +901,9 @@ func hex2decimal(chr byte) (value rune, ok bool) {
+ 	}
+ }
+ 
++func ParseNumberLiteral(literal string) (value interface{}, err error) {
++	return parseNumberLiteral(literal)
++}
+ func parseNumberLiteral(literal string) (value interface{}, err error) {
+ 	// TODO Is Uint okay? What about -MAX_UINT
+ 	value, err = strconv.ParseInt(literal, 0, 64)
