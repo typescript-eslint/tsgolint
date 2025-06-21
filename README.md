@@ -3,11 +3,13 @@
 **tsgolint** is an experimental proof-of-concept [typescript-go](https://github.com/microsoft/typescript-go) powered JS/TS linter written in Go.
 
 > [!IMPORTANT]
-> **tsgolint** is in the early stages of development. Expect breaking changes to happen.
+> **tsgolint** is a prototype in the early stages of development.
+> It is not actively being worked on, nor is it expected to be production ready.
+> See **[Goals and Non-Goals](#goals-and-non-goals)**.
 
 ![Running tsgolint on microsoft/typescript repo](./docs/record.gif)
 
-## What's done so far
+## What's been prototyped
 
 - Primitive linter engine
 - Lint rules tester
@@ -15,7 +17,7 @@
 - 40 [type-aware](https://typescript-eslint.io/blog/typed-linting) typescript-eslint's rules
 - Basic `tsgolint` CLI
 
-## Speedup over ESLint
+### Speedup over ESLint
 
 **tsgolint** is **20-40 times faster** than ESLint + typescript-eslint.
 
@@ -27,7 +29,7 @@ Most of the speedup is due to the following facts:
 
 See [benchmarks](./benchmarks/README.md) for more info.
 
-## Implemented rules
+### Implemented rules
 
 | Name                                                                                                                | Status |
 | ------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -72,7 +74,7 @@ See [benchmarks](./benchmarks/README.md) for more info.
 | [unbound-method](https://typescript-eslint.io/rules/unbound-method)                                                 | ✅     |
 | [use-unknown-in-catch-callback-variable](https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable) | ✅     |
 
-## What hasn't been done yet
+## What hasn't been prototyped
 
 - Non-type-aware rules
 - Editor extension
@@ -80,13 +82,27 @@ See [benchmarks](./benchmarks/README.md) for more info.
 - Config file
 - Plugin system
 
-## What about JS plugins?
+### What about JS plugins?
 
 JS-based plugins are not currently supported.
 
 - Experimental support is available on the [`experimental-eslint-compat`](https://github.com/typescript-eslint/tsgolint/tree/experimental-eslint-compat) branch using the [goja](https://github.com/dop251/goja) JavaScript engine.
 - While functional, performance was significantly worse than ESLint running in Node.js, so this approach is currently on hold.
 - If a faster, lower-allocation JS interpreter in Go becomes available in the future, we may revisit this idea.
+
+## Goals and Non-Goals
+
+**tsgolint** is an experiment.
+It is not under active development.
+
+**Goals**: to explore architectures and performance characteristics.
+We want to investigate how much faster linting could be if we moved the linter to Go alongside typescript-go.
+
+**Non-Goals**: we have no plans to take significant development budget away from typescript-eslint to work on tsgolint.
+Our plan is to continue to work on typescript-eslint to supported typed linting with ESLint.
+Experiments such as tsgolint should not be taken as indications of any project direction.
+
+> If you want faster typed linting with ESLint, see [typescript-eslint/typescript-eslint#10940 Enhancement: Use TypeScript's Go port (tsgo / typescript-go) for type information](https://github.com/typescript-eslint/typescript-eslint/issues/10940).
 
 ## Building `tsgolint`
 
